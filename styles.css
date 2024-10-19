@@ -1,0 +1,235 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-nav{
+    height: 40px;
+    background: #333;
+    width: 100%;
+    position: fixed;
+    top:0;
+    z-index: 999;
+   
+}
+
+.main-nav a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px;
+    
+}
+
+ .cont{ 
+    display: flex;
+    justify-content:center;
+    align-items: center;
+ }
+
+.res-nav{
+    height: 40px;
+    background: #1a1818;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 0;
+}
+
+.nav-menu{
+    height:100vh;
+    background-color: #333;
+    display: none;
+    
+}
+
+.hero{
+    max-width: 100vw;
+    height: 100vh;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+
+.mini h1 {
+    color: black;
+}
+
+.hero img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.hero-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding:30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.pro{
+    margin-top: 10px;
+}
+.pro h1{
+    color: white;
+    text-align: center;
+}
+
+.pro h3{
+    color: white;
+    text-align: center;
+}
+
+.mini h1, h3{
+    color: black;
+    text-align: center;
+}
+/* .hero-content h1, h3{
+    color: #fff;
+    text-align: center;
+} */
+
+
+.hero-btn{
+    margin-bottom: 30px;
+}
+
+.hero-btn button{
+    color: white;
+    font-size: 20px;
+    margin-right: 20px;
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+
+.blue-btn{
+    background-color: blue;
+    border: none;
+}
+
+.no-btn{
+    background-color: transparent;
+    border: 2px blue solid;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.hero-span {
+    color: #a39e9e;
+}
+
+
+.four-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding:0 10px;
+    gap: 10px;
+    width: 100%f;
+}
+.grid-one{
+   height: 450px;
+   position: relative;
+}
+
+.four-grid img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-column{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:30px 70px;
+    color: #fff;
+}
+
+
+.grid-column h2 {
+    font-size: 35px;
+}
+
+.grid-column button {
+    padding:8px 20px;
+    margin: 15px;
+    background-color: transparent ;
+    border: .5px #fff solid;
+    border-radius: 18px;
+    color: #fff;
+}
+
+
+.part5 img{
+    width: 100%;
+    height: 600px;
+    object-fit: contain;
+    padding: 10px 10px;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+
+  .part5{
+    background: #5b5b5d;
+    margin-top: white 10px solid;
+  }
+ 
+
+  .part6{
+    background: white;
+    
+}
+
+.part6 li{
+    text-decoration: none;
+    list-style: none;
+}
+.part6 h4{
+    color:black;
+    font-weight: 700;
+    
+}
+.part6 ul{
+    gap:5px;
+}
+
+
+
+
+.part6 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    
+}
+
+@media  (max-width: 500px){
+    .res-nav{
+        z-index: 10000;
+        display: none;
+    }
+    .four-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+
+    .nav-menu{
+        display: flex;
+    }
+}
